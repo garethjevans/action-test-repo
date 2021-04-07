@@ -12,3 +12,7 @@ jobs:
       - name: before a release
         run: |
           echo "Something"
+          echo "${GITHUB_REF}" >> README.md
+          git add README.md
+          git commit -m "chore: updated README with ref ${GITHUB_REF}"
+          git push
