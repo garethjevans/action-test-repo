@@ -15,4 +15,4 @@ jobs:
 
       - name: during a release
         run: |
-          echo "Something"
+          cat README.md
