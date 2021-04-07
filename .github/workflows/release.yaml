@@ -1,0 +1,14 @@
+---
+name: Run this for a release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - name: during a release
+        run: |
+          echo "Something"
